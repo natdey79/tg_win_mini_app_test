@@ -18,7 +18,15 @@
             <h2>Add New Reminder</h2>
             <div class="form-group">
                 <input type="text" id="task-title" placeholder="What do you need to remember?" maxlength="100">
-                <input type="datetime-local" id="task-time">
+                
+                <!-- DATE PICKER -->
+                <label for="task-date">Select Date:</label>
+                <input type="date" id="task-date">
+                
+                <!-- TIME PICKER -->
+                <label for="task-time">Select Time:</label>
+                <input type="time" id="task-time">
+                
                 <button id="add-task-btn" class="btn-primary">Add Reminder</button>
             </div>
         </div>
