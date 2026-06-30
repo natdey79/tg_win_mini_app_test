@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Reminder</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header>
+            <h1>⏰ Task Reminder</h1>
+            <p id="user-greeting">Hello!</p>
+        </header>
+
+        <!-- Add Task Form -->
+        <div class="card">
+            <h2>Add New Reminder</h2>
+            <div class="form-group">
+                <input type="text" id="task-title" placeholder="What do you need to remember?" maxlength="100">
+                <input type="datetime-local" id="task-time">
+                <button id="add-task-btn" class="btn-primary">Add Reminder</button>
+            </div>
+        </div>
+
+        <!-- Task List -->
+        <div class="card">
+            <h2>Your Reminders</h2>
+            <div id="task-list">
+                <p class="empty-message">No reminders yet. Add one above!</p>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button id="clear-all-btn" class="btn-secondary">Clear All</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
