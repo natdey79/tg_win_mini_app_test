@@ -84,11 +84,6 @@ input[type="datetime-local"]:focus {
     opacity: 0.8;
 }
 
-.btn-primary:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-}
-
 .btn-secondary {
     background: transparent;
     color: var(--tg-theme-button-color, #0088cc);
@@ -105,7 +100,6 @@ input[type="datetime-local"]:focus {
     color: var(--tg-theme-button-text-color, #ffffff);
 }
 
-/* Task List */
 #task-list {
     min-height: 80px;
 }
@@ -171,17 +165,4 @@ input[type="datetime-local"]:focus {
     justify-content: center;
     gap: 12px;
     margin-top: 8px;
-}
-
-/* Telegram Main Button area */
-.main-button-area {
-    height: 48px;
-    margin-top: 16px;
-}
-
-/* Responsive */
-@media (max-width: 480px) {
-    .form-group {
-        flex-direction: column;
-    }
 }
